@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIC-view all</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container div {
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+        .logo img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            margin-bottom: 2%;
+        }
+
+        .add-new a {
+            border: 2px solid #000;
+            padding: 5px 20px;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+
+        .section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .add-new a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .details {
+            text-align: center;
+            margin: auto 2%;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .tab {
+            /* border: 2px solid red; */
+            box-shadow: 4px 4px 12px 4px #161616;
+            margin: 25px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr td {
+            padding: 2.5%;
+        }
+
+        tr td a {
+            margin-top: 10px;
+            padding: 5px 20px;
+            text-decoration: none;
+            border: 2px solid black;
+            color: #fff;
+            background-color: #222222;
+            border-radius: 4px;
+        }
+
+        .heading {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        @media screen and (max-width: 992px) {
+            .details {
+                display: block;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .logo img {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .details {
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .details {
+                display: block;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .logo img {
+                width: 30%;
+            }
+        }
+
+        @media screen and (max-width: 468px) {
+            body {
+                margin: auto 0;
+                font-size: 14px;
+            }
+
+            .container {
+                margin: auto 0;
+            }
+
+            .details {
+                display: block;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .logo img {
+                width: 30%;
+            }
+
+            .add-new a {
+                padding: 2px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- IMAGE -->
+        <div class="logo">
+            <img src="/LIC-Logo.png" alt="">
+        </div>
+
+        <div class="section">
+            <!-- VIEW ALL PAGE -->
+            <div class="add-new column">
+                <a href="#">Add New</a>
+            </div>
+
+            <!-- COUNT FROM DB  -->
+            <div class="total column">
+                Total Clients = 22
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>Customers Details</h1>
+    </div>
+    <div class="details">
+        <!-- CUSTOMER DETAILS (FOR LOOP) -->
+        <div class="tab">
+            <table class="customer">
+                <tr>
+                    <td>Name</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>DOC</td>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+                <tr>
+                    <td>P/P/T</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Premium Amount</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>Final Amount</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Mobile No</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Policy No</td>
+                    <td>001545</td>
+                </tr>
+                <tr>
+                    <td>Branch Name</td>
+                    <td>Nehru Nagar</td>
+                </tr>
+                <tr class="buttons">
+                    <td><a href="">DELETE</a></td>
+                    <td><a href="">EDIT</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab">
+            <table class="customer">
+                <tr>
+                    <td>Name</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>DOC</td>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+                <tr>
+                    <td>P/P/T</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Premium Amount</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>Final Amount</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Mobile No</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Policy No</td>
+                    <td>001545</td>
+                </tr>
+                <tr>
+                    <td>Branch Name</td>
+                    <td>Nehru Nagar</td>
+                </tr>
+                <tr class="buttons">
+                    <td><a href="">DELETE</a></td>
+                    <td><a href="">EDIT</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab">
+            <table class="customer">
+                <tr>
+                    <td>Name</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>DOC</td>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+                <tr>
+                    <td>P/P/T</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Premium Amount</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>Final Amount</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Mobile No</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Policy No</td>
+                    <td>001545</td>
+                </tr>
+                <tr>
+                    <td>Branch Name</td>
+                    <td>Nehru Nagar</td>
+                </tr>
+                <tr class="buttons">
+                    <td><a href="">DELETE</a></td>
+                    <td><a href="">EDIT</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab">
+            <table class="customer">
+                <tr>
+                    <td>Name</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>DOC</td>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+                <tr>
+                    <td>P/P/T</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Premium Amount</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>Final Amount</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Mobile No</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Policy No</td>
+                    <td>001545</td>
+                </tr>
+                <tr>
+                    <td>Branch Name</td>
+                    <td>Nehru Nagar</td>
+                </tr>
+                <tr class="buttons">
+                    <td><a href="">DELETE</a></td>
+                    <td><a href="">EDIT</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab">
+            <table class="customer">
+                <tr>
+                    <td>Name</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>DOC</td>
+                    <td>Lorem, ipsum dolor.</td>
+                </tr>
+                <tr>
+                    <td>P/P/T</td>
+                    <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                    <td>Premium Amount</td>
+                    <td>9999</td>
+                </tr>
+                <tr>
+                    <td>Final Amount</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>Mobile No</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td>Policy No</td>
+                    <td>001545</td>
+                </tr>
+                <tr>
+                    <td>Branch Name</td>
+                    <td>Nehru Nagar</td>
+                </tr>
+                <tr class="buttons">
+                    <td><a href="">DELETE</a></td>
+                    <td><a href="">EDIT</a></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
